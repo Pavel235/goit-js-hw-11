@@ -8,9 +8,15 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="input-container">
+    <form class="form">
     <input class="input-text" type="text" placeholder="Search images..."/>
-    <button class="search-button" type="button">Search</button>
+    <button class="search-button" type="submit">Search</button>
+    </form>
+    <ul class="gallery"></ul>
+
+    <div class="loading-container">
+    <p class="loading-text-content">Loading images, please wait...</p>
+    <span class="loader"></span>
     </div>
     <script type="module" src="./main.js"></script>
   </body>
