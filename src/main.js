@@ -87,7 +87,7 @@ function searchImage(params) {
             loadingContainer.classList.add('is-open');
         }
 
-        initialParams.q = inputElement.value;
+        initialParams.q = inputElement.value.trim();
         const searchParams = new URLSearchParams(initialParams);
         searchImage(searchParams);
     });
